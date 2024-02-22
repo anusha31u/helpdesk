@@ -1,0 +1,144 @@
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .conversation-list {
+        width: 200px;
+        border-right: 1px solid #ccc;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .messages {
+        flex: 1; 
+        display: flex; 
+        flex-direction: column; 
+        padding: 20px;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .profile-section {
+        width: 200px;
+        padding: 20px;
+        border-left: 1px solid #ccc;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background-color: #e5e5e5;
+    }
+
+    #message-input {
+        width: calc(98% - 10px); 
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        resize: none;
+    }
+
+    button {
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    
+    .message-bubble {
+        display: block; 
+        clear: both; 
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        max-width: 70%;
+    }
+
+    .sent-bubble {
+        background-color: #007bff;
+        color: #fff;
+        float: right;
+    }
+
+    .received-bubble {
+        background-color: #f3f3f3;
+        color: #333;
+        float: left;
+    }
+
+
+    .message-timestamp {
+        font-size: 0.8rem;
+        color: #666;
+        margin-top: 5px;
+    }
+
+ 
+    .input-area {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        display: flex; 
+        align-items: center; 
+        position: absolute;
+        bottom: 0;
+        width: 100%; 
+    }
+
+    .input-area textarea {
+        flex: 1; 
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        resize: none;
+    }
+
+    .input-area button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: 0.1px; 
+     
+    }
+
+ 
+    .profile-img {
+        width: 50px; 
+        height: 50px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+    }
+
+
+
+
